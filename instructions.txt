@@ -1,0 +1,16 @@
+—————— English ——————
+
+Your task is to implement application for managing images collection.
+
+Requirements:
+- application should contain elements: navigation with action buttons, main frame with images collection
+- buttons in navigation should show counters (all, selected)
+- button "show selected" should show selected images
+- button "reset selection" should unselect all images
+- button "select all" should select all images
+- checkbox in a single image should be shown on hover and change it’s state after click (as show in design file)
+
+Recommendations:
+- pay attention to proper usage of HTML elements and CSS styles
+- look to appropriate class naming according to known conventions
+- try to code application in such a way that it can be embedded in other application
