@@ -1,6 +1,8 @@
 # image-gallery
 > Image gallery made with use of jQuery, HTML and CSS(Sass)
 
+> To run this project type in console 'npm i' and 'npm start'
+
 * Mockup:
 <img alt="Final result" src="project.png">
 

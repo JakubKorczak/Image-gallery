@@ -1,0 +1,16 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(222,222,222);
+    font-family: 'Arial', sans-serif;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1410px;
+    background-color: $bc-col;
+}

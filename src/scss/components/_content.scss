@@ -1,0 +1,114 @@
+.main-content {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 16px;
+    margin-right: 5px;
+}
+
+.main-content__img-box {
+    flex: 1 0 20%;
+    height: 300px;
+    min-width: 320px;
+    margin: 10px 12px 0 0;
+    background-color: lightgrey;
+    border-radius: 4px;
+    border: 3px solid $bc-col;
+
+    &:hover .main-content__img-box__checkbox-container {
+        visibility: visible;
+    }
+}
+
+.main-content__img-box__checkbox-container {
+    visibility: hidden;
+    position: absolute;
+    z-index: 2;
+    width: 24px;
+    height: 24px;
+    margin: 12px;
+    background: #fff;
+    border-radius: 50%;
+
+    .main-content__img-box__checkbox[type=checkbox] {
+        visibility: hidden;
+
+        &:checked + label:after {
+            opacity: 1;
+        }
+    }
+}
+.main-content__img-box__checkbox--label {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    position: absolute;
+    left: -1px;
+    top: -1px;
+    cursor: pointer;
+
+    &:after {
+        content: '';
+        width: 26px;
+        height: 26px;
+        position: absolute;
+        background: $col-green;
+        opacity: 0;
+        border-radius: 50%;
+    }
+
+    &:hover::after {
+        opacity: 0.3;
+    }
+}
+
+.main-content__img-box__image {
+    height: 65%;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 4px 4px 0 0;
+    box-shadow: 0 2px 4px 0 lightgrey;;
+}
+.main-content__img-box__description {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 35%;
+    background-color: #fff;
+    color: $col-text;
+    box-shadow: 0 3px 4px 0px lightgrey;
+    border-radius: 0 0 4px 4px;
+
+}
+.main-content__img-box__description__text {
+    margin: 0;
+    padding: 0 0 0 18px;
+}
+.main-content__img-box__description__text--modified {
+    font-size: 12px;
+
+    span {
+        font-weight: 600;
+    }
+}
+
+.active {
+    border: 3px solid $col-green;
+    box-shadow: 0 3px 4px 0px lightgrey;
+
+    .main-content__img-box__image::before, {
+        content: "";
+        display: block;
+        height: 100%;
+        width: 100%;
+        background-color: rgba(52,73,94,0.75);
+    }
+
+    .main-content__img-box__checkbox-container {
+        visibility: visible;
+    }
+
+    .main-content__img-box__description, .main-content__img-box__image {
+        box-shadow: none;
+    }
+}

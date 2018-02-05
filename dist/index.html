@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Task for connectmedica">
+    <meta name="keywords" content="HTML,CSS,jQuery,JavaScript">
+    <meta name="author" content="Korcz">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connectmedica</title>
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="top-bar">
+            <header class="top-bar__header">
+                <a href="#" class="top-bar__header__link">
+                    <h1 class="top-bar__header__text">Media library</h1>
+                </a>
+            </header>
+            <nav class="top-bar__nav">
+                <button class="top-bar__nav__btn btn" type="button" id="select-all">Select all (<span id="number-items"></span>)</button>
+                <button class="top-bar__nav__btn btn" type="button" id="reset-all">Reset selection</button>
+                <button class="top-bar__nav__btn btn" type="button" id="show-selected">Show selection (<span id="number-selected"></span>)</button>
+            </nav>
+        </div>
+
+        <div class="main-content" id="content"></div>
+
+        <div class="modal" id="modal">
+            <div class="modal-content">
+                <span class="modal-content__close" id="modal-close">&times;</span>
+                <div class="modal-img">
+                    <span class="modal-img__counter"></span>
+                    <button class="modal-img__btn modal-img__btn--prev btn" type="button" id="btn-prev">Prev</button>
+                    <button class="modal-img__btn modal-img__btn--next btn" type="button" id="btn-next">Next</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+    <script
+    src="https://code.jquery.com/jquery-3.2.1.js"
+    integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+    crossorigin="anonymous"></script>
+    <script type="text/javascript" src="./js/script.min.js"></script>
+</html>

@@ -1,0 +1,18 @@
+.btn {
+    cursor: pointer;
+    border: none;
+    background-color: $bc-col;
+    color: $col-text;
+    font-size: 12px;
+    font-weight: 500;
+    transition: .6s all;
+
+    &:hover {
+        box-shadow: 0 0 4px 1px $col-green;
+    }
+
+    &:focus {
+        outline: none;
+        //grey auto 2px;
+    }
+}
